@@ -1,0 +1,147 @@
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.container-resume{
+    width: 100%;
+    text-align: center;
+    background-color: #dfdbdb;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    .title{
+        padding-top: 40px;
+        margin-bottom: 150px;
+    }
+
+}
+
+.content-resume{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+    align-items: center;
+
+    .skills-title{
+        // padding: 5px;
+        // margin: 50px 0;
+        border-bottom: 1px solid #000;
+ 
+    }
+}
+.lang{
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        li{
+            list-style: none;
+        }
+    }
+}
+.content-edu-exp{
+    width: 100%;
+    display: flex;
+}
+.half{
+    width: 50%;
+}
+
+.edu, .exp{
+    display: flex;
+    flex-direction: column;
+    .edu-card, .exp-card{
+        margin: 30px auto;
+        border-bottom: 1px solid #000;
+
+    }
+    h4{
+        margin-bottom: 10px;
+    }
+    .exp-card p{
+        margin: 15px;
+    }
+    span{
+        padding: 10px;
+        font-weight: bolder;
+    }
+    h5{
+        margin: 10px;
+        img{
+            margin-right: 5px;
+        }
+    }
+}
+
+.current-work{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        margin: 20px;
+        text-align: center;
+    }
+
+    .work-cont{
+        display: flex;
+
+    }
+    p{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 1260px){
+    .content-resume{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 800px){
+    .content-resume{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        & h2, p{
+            padding: 10px;
+        }
+    }
+    .container-resume{
+        .title{
+            padding-top: 40px;
+            margin-bottom: 70px;
+        }
+    
+    }
+}
+
+@media (max-width: 650px){
+    .content-edu-exp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .edu{
+            margin-top: 50px;
+        }
+    }
+}

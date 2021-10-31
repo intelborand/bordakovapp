@@ -1,0 +1,34 @@
+@import '/src/styles/nullstyles.scss';
+
+.about-conatainer{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title{
+        text-align: center;
+        margin-top: 60px;
+    }
+    .about-description {
+        text-align: center;
+        max-width: 700px;
+        margin: 20px auto 75px;
+        color: #9A9A9A;
+        font-weight: 300;
+        font-size: 1.3em;
+        line-height: 1.4em;
+        a{
+            text-decoration: none;
+            color: #9A9A9A;
+            &:hover{
+                color: #524a4a;
+            }
+        }
+        span{
+            display: inline-block;
+            margin-top: 20px;
+        }
+    }
+
+}
