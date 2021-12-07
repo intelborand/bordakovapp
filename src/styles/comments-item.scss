@@ -1,0 +1,35 @@
+@import '/src/styles/nullstyles.scss';
+
+
+.li-group{
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 10px auto;
+    list-style: none;
+    padding: 10px;
+    span{
+        padding: 5px;
+        font-weight: bold;
+    }
+    .comment-text{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    button{
+        display: inline-block;
+        padding: 10px;
+        margin-right: 5px;
+        color: red;
+        background-color: #fff;
+        cursor: pointer;
+       
+    }
+    .like{
+        color: green;
+        font-weight: bold;
+    }
+    .reposted{
+        color: blue;
+        font-weight: bold;
+    }
+}

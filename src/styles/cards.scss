@@ -1,0 +1,28 @@
+.title {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    color: black;
+    
+  }
+  
+  .cardsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    box-sizing: border-box;
+    color: #2c2c2c;
+    font-size: 14px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
