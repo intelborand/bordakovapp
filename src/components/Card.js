@@ -19,6 +19,7 @@ export default function Card({title, url, text, link}) {
                 </div>
                 <div className='btn'>
                         <Link to={link}>Open App</Link>
+                        
                 </div>
             </div>
 

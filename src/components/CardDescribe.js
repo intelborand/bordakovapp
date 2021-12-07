@@ -11,9 +11,11 @@ export default function CardDescribe({title, text, link}) {
             </div>
             <div className="par-describe">
                 <p>{text}</p>
+                <p>GitHub repositorie with this app you can find <a href="https://github.com/intelborand/bordakovapp/tree/main/src/components/Comments">here.</a></p>
             </div>
             <div className='btn'>
                     <Link to={link}>Open App</Link>
+                    
             </div>
 
             <style jsx>{`
@@ -26,6 +28,13 @@ export default function CardDescribe({title, text, link}) {
                 .btn{
                     margin-top: 25px;
                     
+                }
+                a{
+                    color: #2c2c2c;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: #2CA8FF;
                 }
             `}</style>
         </div>
