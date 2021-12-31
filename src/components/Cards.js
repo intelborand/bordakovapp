@@ -26,6 +26,7 @@ export default function Cards() {
                     <CardDescribe
                         title='Comments App'
                         text='This ToDo style app was build in ReactJS library. It`s contain my own practice with "props, states, events, this". It is not a perfect-styled app but is functional. You can add, like or delete comments.'
+                        githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/Comments'
                         link='/comments_app'/>
 
                     <style jsx>{`
@@ -46,7 +47,8 @@ export default function Cards() {
                     />
                     <CardDescribe
                         title='Calculator App'
-                        text='This app was build in ReactJS library. It`s contain my own practice with "props, states, events, this". It is not a perfect-styled app but is functional. You can add, like or delete comments.'
+                        text='This app was build in ReactJS library. You know what is this Calculator. In this app I used reducer Hooks (useReducer). Calculator App contain my own practice with his hook. It`s working and it`s good!'
+                        githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/CalculatorApp'
                         link='/calculator_app'/>
 
                     <style jsx>{`

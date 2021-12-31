@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom';
 
 
-export default function CardDescribe({title, text, link}) {
+export default function CardDescribe({title, text, link, githubLink}) {
     return(
         <>
         <div className="describe-app">
@@ -11,7 +11,7 @@ export default function CardDescribe({title, text, link}) {
             </div>
             <div className="par-describe">
                 <p>{text}</p>
-                <p>GitHub repositorie with this app you can find <a href="https://github.com/intelborand/bordakovapp/tree/main/src/components/Comments">here.</a></p>
+                <p>GitHub repositorie with this app you can find <a href={githubLink}>here.</a></p>
             </div>
             <div className='btn'>
                     <Link to={link}>Open App</Link>
