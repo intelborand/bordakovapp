@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 export default function CardDescribe({title, text, link}) {
     return(
         <>
-        <div className="describe">
+        <div className="describe-app">
             <div className="title-describe">
                 <h2 className='title'>{title}</h2>
             </div>
@@ -19,7 +19,7 @@ export default function CardDescribe({title, text, link}) {
             </div>
 
             <style jsx>{`
-                .describe{
+                .describe-app{
                     width: 50%;
                     margin-left: 25px;
                     align-items: center;
