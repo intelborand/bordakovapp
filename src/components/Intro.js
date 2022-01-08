@@ -35,9 +35,10 @@ export default function Intro() {
                 <h3 className='describe'>Junior Front-End Developer</h3>
             </div>
             <div className="links">
+              <a target='blank' href="https://www.upwork.com/freelancers/~01f81f649c1a93d097"><img src="https://img.icons8.com/ios-filled/50/000000/upwork.png" width='30' alt='upwork'/></a>
               <a target='blank' href='https://www.linkedin.com/in/andrii-bordakov-925367152/'><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" width='30' alt='linkedin'/></a>
               <a target='blank' href='https://github.com/intelborand'><img src="https://img.icons8.com/ios-filled/50/000000/github.png" width='30' alt='github'/></a>
-              <a target='blank' href='https://www.facebook.com/b.andromed/'><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" width='30' alt='github'/></a>
+              <a target='blank' href='https://www.facebook.com/b.andromed/'><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" width='30' alt='fb'/></a>
             </div>
         </div>
     </>

@@ -15,7 +15,7 @@ export default function Resume() {
                         <p>HTML, CSS, JavaScript, ReactJS, Redux, Next.JS, REST API</p>
 
                         <h2 className='skills-title'>Tools</h2>
-                        <p>GitHub, VSCode, Gulp, Webpack, MAMP, Slack</p>
+                        <p>GitHub, Bitbucket, VSCode, Gulp, Webpack, MAMP, Slack</p>
                     </div>
                     <div className='lang'>
                         <h2 className='lang-title'>Languages</h2>
@@ -62,9 +62,14 @@ export default function Resume() {
                     <div className='current-work'>
                         <h2>Current work</h2>
                         <div className='work-cont'>
+                            <p>2021 - Until today</p>
+                            <p><span>Junior React Developer - </span></p>
+                            <p>Upwork</p>
+                        </div>
+                        <div className='work-cont'>
+                            <p>2021 - Until today</p>
                             <p><span>Junior JS Developer - </span></p>
-                            <p>Developing team-project (Next.JS) </p>
-
+                            <p>Developing team-project (Next.JS)</p> 
                         </div>  
                     </div>
                 </div>
