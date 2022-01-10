@@ -15,7 +15,7 @@ export default function Cards() {
            
         <div className='cardsContainer'>
             <div>
-                <h1 className='title'>Cards</h1>
+                <h1 className='title'>Applications</h1>
             </div>
             <div>
                 <div className="flex-cards">
@@ -71,9 +71,8 @@ export default function Cards() {
                     />
                     <CardDescribe
                         title='Snake Game'
-                        // text='This app was build in ReactJS library. You know what is this Calculator. In this app I used reducer Hooks (useReducer). Calculator App contain my own practice with his hook. It`s working and it`s good!'
-                        text='Comming soon...'
-                        // githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/CalculatorApp'
+                        text='This "simple" game was build in ReactJS library. It`s working and it`s great! Have fun!'
+                        githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/SnakeApp'
                         link='/snake_app'/>
 
                     <style jsx>{`
