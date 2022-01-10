@@ -137,7 +137,7 @@ export default class SnakeApp extends Component {
 
 
     onGameOver() {
-        alert(`Game Over. Your skore ${this.state.snakeDots.length}`);
+        alert(`Game Over. Your score ${this.state.snakeDots.length}`);
         this.setState(initialState);
     }
 
