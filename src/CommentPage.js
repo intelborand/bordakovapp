@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Comments from './components/Comments/Comments';
 
 
 
 export default function CommentPage() {
+
+    useEffect(() => {
+        document.title = 'Comments Page';
+    })
+
     return(
         <>
         <Comments/>

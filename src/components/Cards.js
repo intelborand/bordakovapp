@@ -27,7 +27,7 @@ export default function Cards() {
                     />
                     <CardDescribe
                         title='Comments App'
-                        text='This ToDo style app was build in ReactJS library. It`s contain my own practice with "props, states, events, this". It is not a perfect-styled app but is functional. You can add, like or delete comments.'
+                        text='This ToDo style app was build in ReactJS library and use Fetch API to load comments from fake JSON data. It`s contain my own practice with props, states, events, this and fetch. It is not a perfect-styled app but is functional. You can add, like or delete comments.'
                         githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/Comments'
                         link='/comments_app'/>
 

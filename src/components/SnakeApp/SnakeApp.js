@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React, { Component } from "react";
 import Snake from "./Snake";
 import Food from "./Food";
 
@@ -29,7 +29,6 @@ export default class SnakeApp extends Component {
         this.state= initialState;
     }
 
-   
 
     componentDidMount(){
         setInterval(this.moveSnake, this.state.speed);
@@ -41,6 +40,8 @@ export default class SnakeApp extends Component {
         this.checkIfCollapsed();
         this.checkIfEat();
     }
+
+
 
     onKeyDown = (e) => {
         e = e || window.event;
@@ -142,7 +143,8 @@ export default class SnakeApp extends Component {
     }
 
     render(){
-        return (
+
+          return (
             <>
             <div className="score">{this.state.snakeDots.length}</div>
             <div className="game-area">

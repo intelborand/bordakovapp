@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 
-
 import '../../styles/comments.scss';
 import CommentAddForm from './CommentAddForm';
 import CommentSearchPanel from './CommentSearchPanel';
@@ -13,28 +12,22 @@ export default class Comments extends Component {
     constructor(props){
         super(props);
         this.state = {
-            data: [
-                    {name: "Valera",
-                    like: false,
-                    repost: false,
-                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut, eveniet nulla voluptatum molestiae quae similique, rem quos fuga architecto quis sint ipsam minus aperiam, eos alias a est amet!',
-                    id: 1},
-                    {name: "Simple",
-                    like: false,
-                    repost: false,
-                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut, eveniet nulla voluptatum molestiae quae similique, rem quos fuga architecto quis sint ipsam minus aperiam, eos alias a est ametsit amet consectetur adipisicing elit. Suscipit aut, eveniet nulla voluptatum molestiae quae similique, rem quos fuga architecto quis sint ipsam minus aperiam, eos alias a est amet!',
-                    id: 2},
-                    {name: "Kirril",
-                    like: false,
-                    repost: false,
-                    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut, eveniet nulla voluptatum molestiae quae similique, rem quos fuga architecto quis sint ipsam minus aperiam, eos alias a est ametsit amet consectetur adipisicing elit. Suscipit aut, eveniet nulla voluptatum molestiae quae similique, rem quos fuga architecto quis sint ipsam minus aperiam, eos alias a est amet!met consectetur adipisicing elit. Suscipit aut, eveniet nulla voluptatum molestiae quae similique, rem quos fuga architecto quis sint ipsam minus aperiam, eos alias a est ametsit amet consectetur adipisicing elit. Suscipit aut, eveniet nulla voluptatum molestiae quae similique, rem quos fuga architecto quis sint ipsam minus aperiam, eos alias a est amet!',
-                    id: 3}
-                ],
-                term: ''
+            data: [],
+            term: ''
         }
         this.maxId = 4;
     
     }
+
+    // Fetch response from fake json data
+    componentDidMount() {
+        fetch('https://jsonplaceholder.typicode.com/comments')
+        .then((response) => response.json())
+        .then(commentList => {
+            this.setState({ data: commentList.splice(0, 20) });
+        });
+    }
+
 
     deleteItem = (id) => {
         this.setState(({data}) => ({
@@ -42,8 +35,8 @@ export default class Comments extends Component {
         }))
     }
 
-    onAddPost = (name, text) => {
-        const newItem = {name, text, id: this.maxId++};
+    onAddPost = (name, body) => {
+        const newItem = {name, body, id: this.maxId++};
         this.setState(({data}) => {
             const newArr = [...data, newItem]
 

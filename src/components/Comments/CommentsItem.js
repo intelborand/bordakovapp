@@ -5,8 +5,8 @@ const CommentsItem = (props) => {
 
   
 
-    const {name, text, onDelete, like, repost, onLikedComment, onRepostedComment} = props;
-
+    const {name, body, onDelete, like, repost, onLikedComment, onRepostedComment} = props;
+    
 
    
     let classNameLike = '';
@@ -25,7 +25,7 @@ const CommentsItem = (props) => {
     return(
         <li className='li-group'>
             <span>{name}</span>
-            <div className='comment-text' >{text}</div>
+            <div className='comment-text' >{body}</div>
             <div>
                 <button className={classNameLike} 
                         onClick={onLikedComment}>

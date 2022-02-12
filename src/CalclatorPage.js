@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CalculatorApp from './components/CalculatorApp/CalculatorApp';
 
 
 
 
 export default function CalculatorPage() {
+
+    useEffect(() => {
+        document.title = 'Calculator Page';
+    })
+
     return(
         <>
         <CalculatorApp/>

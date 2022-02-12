@@ -3,10 +3,9 @@ import CommentsItem from "./CommentsItem";
 
 const CommentsItemsList = ({data, onDelete, onLikedComment, onRepostedComment}) => {
 
-
+    console.log(data)
     const element = data.map(item => {
         const {id, ...itemProps} = item;
-
         return(
             <CommentsItem 
             key={id} 

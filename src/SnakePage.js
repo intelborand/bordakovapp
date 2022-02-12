@@ -1,6 +1,13 @@
+import { useEffect } from "react";
+
 import SnakeApp from "./components/SnakeApp/SnakeApp";
 
 export default function SnakePage() {
+
+    useEffect(() => {
+        document.title = 'Snake Page'
+    })
+
     return (
         <>
         <SnakeApp />

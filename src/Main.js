@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import About from './components/About';
 import Header from './components/Header';
 import Intro from './components/Intro';
@@ -18,6 +18,11 @@ import './styles/app.scss';
 
 
 function App() {
+
+  useEffect(() => {
+    document.title = 'Andrii Bordakov';
+  })
+
   return (
     <>
 
