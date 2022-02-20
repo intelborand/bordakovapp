@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../../styles/comment-header.scss';
 
 
 const CommentsHeader = ({allComments, likedComments, repostedComments}) => {

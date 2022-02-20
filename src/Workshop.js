@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import Header from './components/Header';
-import Footer from '../src/components/Footer';
+import Footer from './components/Footer';
 
 import Cards from './components/Cards';
 
 
 // import Timer from './components/Timer';
 
-export default function Blog() {
+export default function Workshop() {
 
     useEffect(() => {
-        document.title = 'Andrii Bordakov Blog';
+        document.title = 'Andrii Bordakov Workshop';
     })
 
     return(

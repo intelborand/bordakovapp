@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className='footer-container'>
                     <nav>
                         <ul>
-                            <li><a href='/blog'>Blog</a></li>
+                            <li><a href='/workshop'>Workshop</a></li>
                             <li><a href='/'>Contact</a></li>
                         </ul>
                     </nav>

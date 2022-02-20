@@ -17,7 +17,7 @@ export default function Header() {
                         <Link to='/resume'>Resume</Link>
                     </li> */}
                     <li>
-                        <Link to='/blog'>Blog</Link>
+                        <Link to='/workshop'>Workshop</Link>
                     </li>
                 </ul>
             </nav>

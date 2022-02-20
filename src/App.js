@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Blog from './Blog';
+import Workshop from './Workshop';
 import Main from './Main';
 import CommentPage from './CommentPage';
 import CalculatorPage from './CalclatorPage';
@@ -19,7 +19,7 @@ function App() {
     <>
     <Router>
         <Route path='/' exact component={Main}></Route>
-        <Route path='/blog' component={Blog}></Route>
+        <Route path='/workshop' component={Workshop}></Route>
         <Route path='/comments_app' component={CommentPage}></Route>
         <Route path='/calculator_app' component={CalculatorPage}></Route>
         <Route path='/snake_app' component={SnakePage}></Route>

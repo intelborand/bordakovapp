@@ -24,9 +24,19 @@ export default class Comments extends Component {
         fetch('https://jsonplaceholder.typicode.com/comments')
         .then((response) => response.json())
         .then(commentList => {
-            this.setState({ data: commentList.splice(0, 20) });
+            this.setState({ data: commentList.splice(0, 25) });
         });
     }
+
+    // Use useEffect
+
+    // useEffect(() => {
+    //     fetch('https://jsonplaceholder.typicode.com/comments')
+    //     .then((response) => response.json())
+    //     .then(commentList => {
+    //         this.setState({ data: commentList.splice(0, 20) });
+    //     });
+    // })
 
 
     deleteItem = (id) => {
