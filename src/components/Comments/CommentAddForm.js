@@ -21,11 +21,14 @@ export default class CommentAddForm extends Component{
     
     onSubmit = (e) => {
         e.preventDefault();
-        this.props.onAddPost(this.state.name, this.state.text);
-        this.setState({
-            name: '',
-            text: ''
-        })
+        if(this.state.name) {
+            this.props.onAddPost(this.state.name, this.state.text);
+            this.setState({
+                name: '',
+                text: ''
+            })
+        }
+
     }
 
     render(){
