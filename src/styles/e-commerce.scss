@@ -1,0 +1,134 @@
+header{
+    position: relative;
+}
+
+.main-con{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    .categories-nav{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    .categories-item{
+        margin-right: 30px;
+        cursor: pointer;
+        transition: all 500ms ease;
+        background: #f2f2f2;
+        border-radius: 50px;
+        padding: 10px 20px;
+        border: 1px solid transparent;
+        box-shadow: 13px 10px 26px -8px rgba(0, 0, 0, 1);
+    }
+    .categories-item:hover{
+        border-color: silver;
+        transform: scale(1.1);
+        box-shadow: 13px 10px 26px -8px rgba(0, 0, 0, 1);
+    }
+    .search-panel{
+        // position: absolute;
+        width: 100px;
+        height: 2px;
+        margin: 0;
+        margin-left: 400px;
+        padding: 18px;
+        // border: #606060 1px solid;
+        border-radius: 50px;
+        background-color: white;
+        box-shadow: 13px 10px 26px -8px rgba(0, 0, 0, 1);
+
+    }
+
+}
+.head-log h3{
+    font-weight: 600;
+}
+
+.nav-manu{
+    display: flex;
+    justify-content: space-around;
+    li{
+        margin-right: 20px;
+    }
+}
+
+.content-main{
+    margin-top: 50px;
+    background: url('../img/bg4.jpg') ;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cart{
+    float: right;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 500ms ease;
+}
+
+.cart:hover{
+    opacity: 1;
+}
+.active{
+    color: red;
+    opacity: 1;
+}
+
+.favorite{
+    float: right;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 500ms ease; 
+}
+
+.favorite:hover{
+    opacity: 1;
+}
+
+.shop-cart{
+    position: absolute;
+    width: 400px;
+
+    top: 40px;
+    right: 0;
+    background: #f5f5f5;
+    -webkit-box-shadow: 4px 5px 15px -7px #606060;
+    box-shadow: 4px 5px 15px -7px #606060;
+    z-index: 50;
+    .empty{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .total{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .shop-cart-item{
+        width: 100%;
+        z-index: 20;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: space-around;
+        img{
+            width: 40px;
+            float: left;
+        }
+        .delete-item{
+            color: red;
+            float: right; 
+            cursor: pointer;
+            transition: opacity 500ms ease;
+        }
+        .delete-item:hover{
+            color: black;
+            transform: scale(1.3);
+        }
+    }
+    .item-name{
+        width: 50px;
+    }
+
+}

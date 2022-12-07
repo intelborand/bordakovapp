@@ -4,7 +4,7 @@ import React from "react";
 import '../styles/resume.scss';
 
 export default function Resume() {
-    return(
+    return (
         <>
 
             <div className='container-resume' id='resume'>
@@ -20,10 +20,10 @@ export default function Resume() {
                     <div className='lang'>
                         <h2 className='lang-title'>Languages</h2>
                         <ul>
-                            <li><img src="https://img.icons8.com/emoji/50/000000/poland-emoji.png" alt='flag'/></li>
-                            <li><img src="https://img.icons8.com/emoji/50/000000/russia-emoji.png" alt='flag'/></li>
-                            <li><img src="https://img.icons8.com/emoji/50/000000/ukraine-emoji.png" alt='flag'/></li>
-                            <li><img src="https://img.icons8.com/emoji/48/000000/united-kingdom-emoji.png" alt='flag'/></li>
+                            <li><img src="https://img.icons8.com/emoji/50/000000/ukraine-emoji.png" alt='flag' /></li>
+                            <li><img src="https://img.icons8.com/emoji/50/000000/poland-emoji.png" alt='flag' /></li>
+                            <li><img src="https://img.icons8.com/emoji/48/000000/united-kingdom-emoji.png" alt='flag' /></li>
+                            <li><img style={{opacity: "0.2"}} src="https://img.icons8.com/emoji/50/000000/russia-emoji.png" alt='flag' /></li>
                         </ul>
                     </div>
                     <div className='content-edu-exp'>
@@ -49,7 +49,7 @@ export default function Resume() {
                                 <p>2017- 2019</p>
                                 <p><span>Master of engineering</span><br /> In the field of – Biotechnology with major in Biotechnology in Animal Production and Environmental Protection</p>
                                 <h5><img src="https://img.icons8.com/color/48/000000/marker--v2.png" width='13' alt='marker' />Poland, Sczcecin city</h5>
-                                
+
                             </div>
                             <div className='edu-card'>
                                 <h4>NULES</h4>
@@ -69,8 +69,8 @@ export default function Resume() {
                         <div className='work-cont'>
                             <p>2021 - Until today</p>
                             <p><span>Junior JS Developer - </span></p>
-                            <p>Developing team-project (Next.JS)</p> 
-                        </div>  
+                            <p>Developing team-project (Next.JS)</p>
+                        </div>
                     </div>
                 </div>
             </div>
