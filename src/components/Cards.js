@@ -7,32 +7,32 @@ import '../styles/cards.scss';
 import comment from '../img/comments.jpg';
 import calculator from '../img/calc.jpg';
 import snake from '../img/Snake.jpg';
-import ecommerce from '../img/ecommerce-shop.png';
+// import ecommerce from '../img/ecommerce-shop.png';
 
 
 export default function Cards() {
-    return(
-    <>
-           
-        <div className='cardsContainer'>
-            <div>
-                <h1 className='title'>Applications</h1>
-            </div>
-            <div>
-                <div className="flex-cards">
-            
-                    <Card 
-                        url={comment}
-                        link='/comments_app'
-                        
-                    />
-                    <CardDescribe
-                        title='Comments App'
-                        text='This ToDo style app was build in ReactJS library and use Fetch API to load comments from fake JSON data. It`s contain my own practice with props, states, events, this and fetch. It is not a perfect-styled app but is functional. You can add, like or delete comments.'
-                        githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/Comments'
-                        link='/comments_app'/>
+    return (
+        <>
 
-                    <style jsx>{`
+            <div className='cardsContainer'>
+                <div>
+                    <h1 className='title'>Applications</h1>
+                </div>
+                <div>
+                    <div className="flex-cards">
+
+                        <Card
+                            url={comment}
+                            link='/comments_app'
+
+                        />
+                        <CardDescribe
+                            title='Comments App'
+                            text='This ToDo style app was build in ReactJS library and use Fetch API to load comments from fake JSON data. It`s contain my own practice with props, states, events, this and fetch. It is not a perfect-styled app but is functional. You can add, like or delete comments.'
+                            githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/Comments'
+                            link='/comments_app' />
+
+                        <style jsx>{`
                     .flex-cards{
                         display: flex;
                         flex-direction:row;
@@ -40,21 +40,21 @@ export default function Cards() {
                         justify-content: center;
                     }
                     `}</style>
-                </div>
+                    </div>
 
-                <div className="flex-cards">
-                    <Card 
-                        url={calculator}
-                        link='/calculator_app'
-                        
-                    />
-                    <CardDescribe
-                        title='Calculator App'
-                        text='This app was build in ReactJS library. You know what is this Calculator. In this app I used reducer Hooks (useReducer). Calculator App contain my own practice with this hook. It`s working and it`s good!'
-                        githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/CalculatorApp'
-                        link='/calculator_app'/>
+                    <div className="flex-cards">
+                        <Card
+                            url={calculator}
+                            link='/calculator_app'
 
-                    <style jsx>{`
+                        />
+                        <CardDescribe
+                            title='Calculator App'
+                            text='This app was build in ReactJS library. You know what is this Calculator. In this app I used reducer Hooks (useReducer). Calculator App contain my own practice with this hook. It`s working and it`s good!'
+                            githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/CalculatorApp'
+                            link='/calculator_app' />
+
+                        <style jsx>{`
                     .flex-cards{
                         display: flex;
                         flex-direction:row;
@@ -62,21 +62,21 @@ export default function Cards() {
                         justify-content: center;
                     }
                     `}</style>
-                </div>
+                    </div>
 
-                <div className="flex-cards">
-                    <Card 
-                        url={snake}
-                        link='/snake_app'
-                        
-                    />
-                    <CardDescribe
-                        title='Snake Game'
-                        text='This "simple" game was build in ReactJS library. It`s working and it`s great! Have fun!'
-                        githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/SnakeApp'
-                        link='/snake_app'/>
+                    <div className="flex-cards">
+                        <Card
+                            url={snake}
+                            link='/snake_app'
 
-                    <style jsx>{`
+                        />
+                        <CardDescribe
+                            title='Snake Game'
+                            text='This "simple" game was build in ReactJS library. It`s working and it`s great! Have fun!'
+                            githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/SnakeApp'
+                            link='/snake_app' />
+
+                        <style jsx>{`
                     .flex-cards{
                         display: flex;
                         flex-direction:row;
@@ -84,9 +84,9 @@ export default function Cards() {
                         justify-content: center;
                     }
                     `}</style>
-                </div>
+                    </div>
 
-                <div className="flex-cards">
+                    {/* <div className="flex-cards">
             
                     <Card 
                         url={ecommerce}
@@ -107,12 +107,12 @@ export default function Cards() {
                         justify-content: center;
                     }
                     `}</style>
+                </div> */}
                 </div>
-            </div>
-            
 
-        </div>
-    </>    
-        
+
+            </div>
+        </>
+
     )
 };
