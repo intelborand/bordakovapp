@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import Header from './Header'
 
 import '../../styles/e-commerce.scss'
@@ -20,59 +20,59 @@ export default function ECommerceApp() {
   function AddToCart(item) {
 
     let isInArray = false
-    
+
     cartOrders.forEach(element => {
 
-      if(element.id === item.id){
+      if (element.id === item.id) {
         isInArray = true
       }
     })
-    if(!isInArray){
+    if (!isInArray) {
 
-    setCartOrders([...cartOrders, item])
+      setCartOrders([...cartOrders, item])
 
     }
-}
-  
-
-function DeleteItem(id){
-  setCartOrders(cartOrders.filter(el => el.id !== id), [cartOrders])
-}
-
-function chooseCategory(categories){
-  
-  if(categories === 'all'){
-    setCurrentOrders(orders);
-    return
   }
 
-  setCurrentOrders(orders.filter(el => el.categories === categories))
-}
 
-
-
-function onUpdateTerm(term) {
-  setTerm(term);
-  if (term !== ""){
-    const newOrder = currentOrders.filter((order) => {
-      return Object.values(order).join(" ").toLowerCase().includes(term.toLowerCase());
-    });
-    setSearchOrders(newOrder);
-  } else {
-    setSearchOrders(currentOrders);
+  function DeleteItem(id) {
+    setCartOrders(cartOrders.filter(el => el.id !== id), [cartOrders])
   }
-}
 
-return (
-  <>
+  function chooseCategory(categories) {
+
+    if (categories === 'all') {
+      setCurrentOrders(orders);
+      return
+    }
+
+    setCurrentOrders(orders.filter(el => el.categories === categories))
+  }
+
+
+
+  function onUpdateTerm(term) {
+    setTerm(term);
+    if (term !== "") {
+      const newOrder = currentOrders.filter((order) => {
+        return Object.values(order).join(" ").toLowerCase().includes(term.toLowerCase());
+      });
+      setSearchOrders(newOrder);
+    } else {
+      setSearchOrders(currentOrders);
+    }
+  }
+
+  return (
+    <>
       <div className='main-con'>
-          <Header cartOrders={cartOrders} onDeleteItem={DeleteItem}/>
-          <Categories onChooseCategory={chooseCategory} onUpdateTerm={onUpdateTerm}/>
-          <div className='content'>
-            <Content orders={term.length < 1 ? currentOrders : searchOrders} AddToCart={AddToCart} />
-          </div>
-          
+        <Header cartOrders={cartOrders} onDeleteItem={DeleteItem} />
+        <Categories onChooseCategory={chooseCategory} onUpdateTerm={onUpdateTerm} />
+        <div className='content'>
+          <Content orders={term.length < 1 ? currentOrders : searchOrders} AddToCart={AddToCart} />
+        </div>
+
       </div>
-  </>
-)
+    </>
+  )
 }
