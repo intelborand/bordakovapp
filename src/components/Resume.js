@@ -8,8 +8,8 @@ export default function Resume() {
 
     const renderTooltip = (props) => (
         <Tooltip id="button-tooltip" {...props}>
-            You should know enemy's language <br />
-            And I know
+            24.02.2022 russian federation started full war against Ukraine. <br />
+            It is not first time when russia dictator try to destroy civilization world.  <br /> I don`t use this language in regular life, but know it.
         </Tooltip>
     );
     return (
@@ -20,10 +20,13 @@ export default function Resume() {
                 <div className='content-resume'>
                     <div className='skills'>
                         <h2 className='skills-title'>Skills</h2>
-                        <p>HTML, CSS, JavaScript, ReactJS, Next.JS, <br /> Angular, NgRx, BabylonJs, Redux, REST API</p>
+                        <p> HTML, CSS(SCSS), Bootstrap, <br />
+                            JavaScript, TypeScript, jQuery, ReactJS, Angular, <br />
+                            Redux, NgRx, Next.JS, BabylonJS, REST API, MongoDB, <br />
+                            MERN Stack, Git</p>
 
                         <h2 className='skills-title'>Tools</h2>
-                        <p>GitHub, Bitbucket, VSCode, Gulp, Webpack, MAMP, Slack</p>
+                        <p>GitHub, Scrum (Jira), Bitbucket, VSCode, Postman</p>
                     </div>
                     <div className='lang'>
                         <h2 className='lang-title'>Languages</h2>
