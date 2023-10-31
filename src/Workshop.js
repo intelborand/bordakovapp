@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
-import Header from './components/Header';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 import Cards from './components/Cards';
 
 
-// import Timer from './components/Timer';
 
 export default function Workshop() {
 
@@ -13,20 +12,11 @@ export default function Workshop() {
         document.title = 'Andrii Bordakov Workshop';
     })
 
-    return(
+    return (
         <>
-        
-        {/* <Timer date='2021-12-26'/> */}
-
-        <Header/>
-
-
-        
-        <Cards/>
- 
-        <Footer/>
-        
-
+            <Header />
+            <Cards />
+            <Footer />
         </>
     )
 }

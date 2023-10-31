@@ -1,12 +1,12 @@
 import React from "react";
 
+import '../styles/cards.scss';
 import Card from "./Card";
 import CardDescribe from "./CardDescribe";
-import '../styles/cards.scss';
 
-import comment from '../img/comments.jpg';
-import calculator from '../img/calc.jpg';
 import snake from '../img/Snake.jpg';
+import calculator from '../img/calc.jpg';
+import comment from '../img/comments.jpg';
 // import ecommerce from '../img/ecommerce-shop.png';
 
 
@@ -75,6 +75,29 @@ export default function Cards() {
                             text='This "simple" game was build in ReactJS library. It`s working and it`s great! Have fun!'
                             githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/SnakeApp'
                             link='/snake_app' />
+
+                        <style jsx>{`
+                    .flex-cards{
+                        display: flex;
+                        flex-direction:row;
+                        margin: 25px auto;
+                        justify-content: center;
+                    }
+                    `}</style>
+                    </div>
+
+                    <div className="flex-cards">
+                        <Card
+                            url={snake}
+                            link='/synonyms_app'
+
+                        />
+                        <CardDescribe
+                            // title='Snake Game'
+                            // text='This "simple" game was build in ReactJS library. It`s working and it`s great! Have fun!'
+                            // githubLink='https://github.com/intelborand/bordakovapp/tree/main/src/components/SnakeApp'
+                            link='/synonyms_app'
+                        />
 
                         <style jsx>{`
                     .flex-cards{
